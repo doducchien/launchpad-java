@@ -1,6 +1,9 @@
 package com.example.launchpadjava.dto.request;
 
 import java.sql.Timestamp;
+import java.util.List;
+
+import com.example.launchpadjava.entity.Pool;
 
 import lombok.Data;
 
@@ -16,8 +19,10 @@ public class ProjectRequest {
     private Timestamp tokenListingDate;
     private String websiteLink;
     private String fundRaiseIn;
-    private int totalNumberTokenRaise;
-    private int targetTotalFundRaise;
-    private int totalFundRaise;
-    private int nftDistributionDate;
+    private Long totalNumberTokenRaise;
+    private Long targetTotalFundRaise;
+    private Long totalFundRaise;
+    private Long nftDistributionDate;
+
+    private List<PoolRequest> pools;
 }
